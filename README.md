@@ -1,5 +1,5 @@
 # pacaur-safe-updater
-A little script define versions of packages wich compromise your system and prevent them to get installed.
+A little script to define versions of packages wich compromise your system and prevent them to get installed.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
