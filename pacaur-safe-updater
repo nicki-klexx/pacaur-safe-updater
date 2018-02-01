@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 declare -A BAD_VERSIONS=(
 	# Enter the names and versions of the packages you don't want to install:
