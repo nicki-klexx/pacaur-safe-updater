@@ -7,7 +7,7 @@ This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 Intern
 
 Edit the script and enter the names and versions of the packages you don't want to install into the array. 
 
-You have to copy the file e.g. to $HOME/bin and make it executable.
+You have to copy the file e.g. to $HOME/bin and make it executable if it is not yet.
 
 Then you can easily run
 ```

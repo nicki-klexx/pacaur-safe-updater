@@ -1,9 +1,10 @@
 #/bin/bash
 
 declare -A BAD_VERSIONS=(
-	[paketname1]=1.2.34
-	[pakername2]=5.6
-	[paketname3]=7.89
+	# Enter the names and versions of the packages you don't want to install:
+	[packagename1]=1.2.34
+	[packagename2]=5.6
+	[packagename3]=7.89
 )
 
 IGNORE=""
