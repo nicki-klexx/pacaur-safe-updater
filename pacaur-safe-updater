@@ -1,0 +1,17 @@
+#/bin/bash
+
+declare -A BAD_VERSIONS=(
+	[paketname1]=1.2.34
+	[pakername2]=5.6
+	[paketname3]=7.89
+)
+
+IGNORE=""
+
+for KEY in ${!BAD_VERSIONS[@]}; do
+	[ "$(pacaur -Si $KEY | grep -i version | tr -s ' ' | cut -d\  -f 3)" == "${BAD_VERSIONS[$KEY]}" ] && IGNORE="$IGNORE $KEY"
+done
+
+[ "$IGNORE" == "" ] || IGNORE="--ignore $IGNORE"
+
+pacaur -Syu $IGNORE
